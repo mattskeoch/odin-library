@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyBooks</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div class="sidebar-layout">
+    <div>
+      <div class="sidebar">
+        <img src="/img/logo.png" alt="Logo" class="logo">
+        <nav class="nav">
+          <ul class="nav__wrapper" role="list">
+            <li class="nav__item"><a href="/index.html">Home</a></li>
+            <li class="nav__item"><a href="#open-modal">Add Book</a></li>
+            <li class="nav__item"><a href="#">Settings</a>
+              <ul role="list">
+                <li><a href="#" class="full">Wide Layout</a></li>
+                <li><a href="#" class="left">Left Layout</a></li>
+                <li><a href="#" class="center">Center Layout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="stats">
+          <div class="stats__total" id="totalBooks">24 Books in Library</div>
+        </div>
+      </div>
+      <div class="not-sidebar">
+        <div class="wrapper">
+          <main>
+            <div class="no-books">
+              <h3>No Books Added</h3>
+            </div>
+            <div id="open-modal" class="modal-window">
+              <div>
+                <a href="#" title="Close" class="modal-close">Close</a>
+                <h2>Add a Book</h2>
+                <div class="form-wrapper">
+                  <form onsubmit="event.preventDefault()">
+                    <label for="name">Book Name</label>
+                    <input class="input" id="title" type="text" />
+                    <label for="author">Author</label>
+                    <input class="input" id="author" type="text" />
+                    <label for="pages">Page Count</label>
+                    <input class="input" id="pages" type="text" />
+                    <label for="read">Read Status</label>
+                    <input type="checkbox" id="read" name="read" checked>
+                    <button class="btn" id="submitBtn">Submit</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="book-list-container">
+              <div class="book-list">
+                <div class="book-list__book"></div>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/layout.js"></script>
+  <script src="/js/library.js"></script>
+</body>
+
+</html>

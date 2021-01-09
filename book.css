@@ -1,0 +1,25 @@
+main {
+  display: grid;
+  place-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+
+}
+
+button.btn {
+  margin-top: 1rem;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1440px;
+}
+
+li {
+  margin-right: 3rem;
+}
